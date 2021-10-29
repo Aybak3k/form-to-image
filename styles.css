@@ -1,0 +1,44 @@
+/* intial styles */
+* {
+    margin:auto;
+    box-sizing: border-box;
+}
+
+body {
+    background : #121212;
+    height:100vh;width: 100vh;
+    display: flex;justify-content: center;align-items: center;
+    color: rgb(253, 231, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#canvas-container{
+    display: none;
+}
+
+/* form container */
+#form-container {
+    /* display: none; */
+    height: 80%;
+    width:60%;
+    border:1px solid rgb(0, 255, 0);
+    display: grid;
+    grid: repeat(auto-fit, 50px)/ 1fr;
+    gap:10px;
+    align-items: center;
+    align-content: center;
+}
+
+/* form elements */
+input, section div {
+    text-align: center;
+    width: 80%;
+}
+
+input[type="color"] {
+    width: 20%;
+}
+
+::placeholder {
+    letter-spacing: .5px;
+}

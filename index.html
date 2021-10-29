@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form To Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- user form -->
+    <section id='form-container'>
+        <input type="text" name="text" id="job" placeholder="What's your profession?">
+        <input type="text" name="text" id="describtion" placeholder="Descibe yourself in 3 words">
+        <div>
+            <label for="input-color">Choose  1<sup>st</sup> color: </label>
+            <input type="color" name="color" id="input-color">
+        </div>
+        <div>
+            <label for="input-color-1">Choose  2<sup>nd</sup> color: </label>
+            <input type="color" name="color" id="input-color-2">
+        </div>
+        <button onclick="generatePic()">where's my pic?</button>
+    </section>
+
+    <!-- canvas container -->
+    <section id='canvas-container'>
+        <canvas id="canvas" width="760" height="600" style="border: 1px solid"></canvas>
+    </section>
+
+    <!-- linking app script -->
+    <script src="app.js"></script>
+</body>
+</html>
